@@ -6,9 +6,25 @@
 //
 
 import UIKit
+import AVFoundation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    func application(_ application: UIApplication, didFishLaunchingWithOptionslaunchOptions:[UIApplication.LaunchOptionsKey:Any]?) -> Bool{
+        let session = AVAudioSession.sharedInstance()
+        do{
+            try session.setCategory(.playback, mode: .default)
+        }catch{
+            fatalError("カテゴリ設定失敗")
+        }
+        do{
+            try session.setActive(true)
+        }catch{
+            fatalError("session有効化失敗")
+        }
+        return true
+    }
 
 
 
