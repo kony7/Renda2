@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE01C64827BAB08100FDA68C /* harasuvoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C63C27BAB08100FDA68C /* harasuvoice.m4a */; };
+		EE01C64927BAB08100FDA68C /* burivoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C63D27BAB08100FDA68C /* burivoice.m4a */; };
+		EE01C64A27BAB08100FDA68C /* ebivoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C63E27BAB08100FDA68C /* ebivoice.m4a */; };
+		EE01C64B27BAB08100FDA68C /* katsuovoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C63F27BAB08100FDA68C /* katsuovoice.m4a */; };
+		EE01C64C27BAB08100FDA68C /* taivoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64027BAB08100FDA68C /* taivoice.m4a */; };
+		EE01C64D27BAB08100FDA68C /* tamagovoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64127BAB08100FDA68C /* tamagovoice.m4a */; };
+		EE01C64E27BAB08100FDA68C /* tyutorovoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64227BAB08100FDA68C /* tyutorovoice.m4a */; };
+		EE01C64F27BAB08100FDA68C /* otorovoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64327BAB08100FDA68C /* otorovoice.m4a */; };
+		EE01C65027BAB08100FDA68C /* kingsamonvoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64427BAB08100FDA68C /* kingsamonvoice.m4a */; };
+		EE01C65127BAB08100FDA68C /* hotatevoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64527BAB08100FDA68C /* hotatevoice.m4a */; };
+		EE01C65227BAB08100FDA68C /* magurovoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64627BAB08100FDA68C /* magurovoice.m4a */; };
+		EE01C65327BAB08100FDA68C /* samonvoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64727BAB08100FDA68C /* samonvoice.m4a */; };
+		EE01C65527BAB36000FDA68C /* sushikuine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE01C65427BAB36000FDA68C /* sushikuine.mp3 */; };
 		EE5A15DE27B9FD5700371872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15DD27B9FD5700371872 /* AppDelegate.swift */; };
 		EE5A15E027B9FD5700371872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */; };
 		EE5A15E227B9FD5700371872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15E127B9FD5700371872 /* ViewController.swift */; };
@@ -17,6 +30,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE01C63C27BAB08100FDA68C /* harasuvoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = harasuvoice.m4a; sourceTree = "<group>"; };
+		EE01C63D27BAB08100FDA68C /* burivoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = burivoice.m4a; sourceTree = "<group>"; };
+		EE01C63E27BAB08100FDA68C /* ebivoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ebivoice.m4a; sourceTree = "<group>"; };
+		EE01C63F27BAB08100FDA68C /* katsuovoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = katsuovoice.m4a; sourceTree = "<group>"; };
+		EE01C64027BAB08100FDA68C /* taivoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = taivoice.m4a; sourceTree = "<group>"; };
+		EE01C64127BAB08100FDA68C /* tamagovoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tamagovoice.m4a; sourceTree = "<group>"; };
+		EE01C64227BAB08100FDA68C /* tyutorovoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tyutorovoice.m4a; sourceTree = "<group>"; };
+		EE01C64327BAB08100FDA68C /* otorovoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = otorovoice.m4a; sourceTree = "<group>"; };
+		EE01C64427BAB08100FDA68C /* kingsamonvoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingsamonvoice.m4a; sourceTree = "<group>"; };
+		EE01C64527BAB08100FDA68C /* hotatevoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hotatevoice.m4a; sourceTree = "<group>"; };
+		EE01C64627BAB08100FDA68C /* magurovoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = magurovoice.m4a; sourceTree = "<group>"; };
+		EE01C64727BAB08100FDA68C /* samonvoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = samonvoice.m4a; sourceTree = "<group>"; };
+		EE01C65427BAB36000FDA68C /* sushikuine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sushikuine.mp3; sourceTree = "<group>"; };
 		EE5A15DA27B9FD5700371872 /* Renda2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Renda2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5A15DD27B9FD5700371872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +92,19 @@
 				EE5A15E627B9FD5900371872 /* Assets.xcassets */,
 				EE5A15E827B9FD5900371872 /* LaunchScreen.storyboard */,
 				EE5A15EB27B9FD5900371872 /* Info.plist */,
+				EE01C63D27BAB08100FDA68C /* burivoice.m4a */,
+				EE01C63E27BAB08100FDA68C /* ebivoice.m4a */,
+				EE01C63C27BAB08100FDA68C /* harasuvoice.m4a */,
+				EE01C64527BAB08100FDA68C /* hotatevoice.m4a */,
+				EE01C63F27BAB08100FDA68C /* katsuovoice.m4a */,
+				EE01C64427BAB08100FDA68C /* kingsamonvoice.m4a */,
+				EE01C64627BAB08100FDA68C /* magurovoice.m4a */,
+				EE01C64327BAB08100FDA68C /* otorovoice.m4a */,
+				EE01C64727BAB08100FDA68C /* samonvoice.m4a */,
+				EE01C64027BAB08100FDA68C /* taivoice.m4a */,
+				EE01C64127BAB08100FDA68C /* tamagovoice.m4a */,
+				EE01C64227BAB08100FDA68C /* tyutorovoice.m4a */,
+				EE01C65427BAB36000FDA68C /* sushikuine.mp3 */,
 			);
 			path = Renda2;
 			sourceTree = "<group>";
@@ -128,9 +167,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE01C64C27BAB08100FDA68C /* taivoice.m4a in Resources */,
+				EE01C64D27BAB08100FDA68C /* tamagovoice.m4a in Resources */,
+				EE01C64927BAB08100FDA68C /* burivoice.m4a in Resources */,
+				EE01C64B27BAB08100FDA68C /* katsuovoice.m4a in Resources */,
+				EE01C65527BAB36000FDA68C /* sushikuine.mp3 in Resources */,
+				EE01C65327BAB08100FDA68C /* samonvoice.m4a in Resources */,
+				EE01C64E27BAB08100FDA68C /* tyutorovoice.m4a in Resources */,
 				EE5A15EA27B9FD5900371872 /* LaunchScreen.storyboard in Resources */,
+				EE01C64827BAB08100FDA68C /* harasuvoice.m4a in Resources */,
+				EE01C65027BAB08100FDA68C /* kingsamonvoice.m4a in Resources */,
 				EE5A15E727B9FD5900371872 /* Assets.xcassets in Resources */,
+				EE01C64A27BAB08100FDA68C /* ebivoice.m4a in Resources */,
 				EE5A15E527B9FD5700371872 /* Main.storyboard in Resources */,
+				EE01C65127BAB08100FDA68C /* hotatevoice.m4a in Resources */,
+				EE01C65227BAB08100FDA68C /* magurovoice.m4a in Resources */,
+				EE01C64F27BAB08100FDA68C /* otorovoice.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +353,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +382,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var number: Int = 0
     var audioPlayer: AVAudioPlayer!
+    var audioPlayer2: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,27 +47,27 @@ class ViewController: UIViewController {
         
         switch number{
         case 1:
-            sushiChange(neta: "ぶりぶりのぶり", img: "buri")
+            sushiChange(neta: "ぶりぶりのぶり", img: "buri", soundName: "burivoice")
         case 2:
-            sushiChange(neta: "ぷりぷりのえび", img: "ebi")
+            sushiChange(neta: "ぷりぷりのえび", img: "ebi", soundName: "ebivoice")
         case 3:
-            sushiChange(neta: "焼いてもおいしいハラス", img: "harasu")
+            sushiChange(neta: "焼いてもおいしいハラス", img: "harasu", soundName: "harasuvoice")
         case 4:
-            sushiChange(neta: "貝の王様ホタテ", img: "hotate")
+            sushiChange(neta: "貝の王様ホタテ", img: "hotate", soundName: "hotatevoice")
         case 5:
-            sushiChange(neta: "脂がいい感じかつお", img: "katsuo")
+            sushiChange(neta: "脂がいい感じかつお", img: "katsuo", soundName: "katsuovoice")
         case 6:
-            sushiChange(neta: "王様キングサーモン", img: "kingsamon")
+            sushiChange(neta: "王様キングサーモン", img: "kingsamon", soundName: "kingsamonvoice")
         case 7:
-            sushiChange(neta: "ジューシーマグロ", img: "maguro")
+            sushiChange(neta: "ジューシーマグロ", img: "maguro", soundName: "magurovoice")
         case 8:
-            sushiChange(neta: "脂の洪水大トロ", img: "otoro")
+            sushiChange(neta: "脂の洪水大トロ", img: "otoro", soundName: "otorovoice")
         case 9:
-            sushiChange(neta: "みんな大好きサーモン", img: "samon")
+            sushiChange(neta: "みんな大好きサーモン", img: "samon", soundName: "samonvoice")
         case 10:
-            sushiChange(neta: "フライも美味しいよねたい", img: "tai")
+            sushiChange(neta: "フライも美味しいよねたい", img: "tai", soundName: "taivoice")
         case 11:
-            sushiChange(neta: "いい感じの脂中トロ", img: "tyutoro")
+            sushiChange(neta: "いい感じの脂中トロ", img: "tyutoro", soundName: "tyutorovoice")
         case 12:
             let url = NSURL(string: "https://www.akindo-sushiro.co.jp/")
             if UIApplication.shared.canOpenURL(url! as URL){
@@ -74,22 +75,22 @@ class ViewController: UIViewController {
             }
             
         default:
-            sushiChange(neta: "あ、おいしいたまご", img: "tamago")
+            sushiChange(neta: "あ、おいしいたまご", img: "tamago", soundName: "tamagovoice")
             
         }
         
     }
     
-    func sushiChange(neta:String, img:String){
+    func sushiChange(neta:String, img:String, soundName:String){
         
         let image = UIImage(named: img)
         let state = UIControl.State.normal
         sushiButton.setImage(image, for: state)
         
-        let imgToAudio = URL(fileURLWithPath:Bundle.main.path(forResource: img, ofType: "m4a")!)
-        audioPlayer = try! AVAudioPlayer(contentsOf: imgToAudio)
-        audioPlayer.play()
-        
+        let imgToAudio = URL(fileURLWithPath:Bundle.main.path(forResource: soundName, ofType: "m4a")!)
+        audioPlayer2 = try? AVAudioPlayer(contentsOf: imgToAudio)
+        audioPlayer2.play()
+
         numberLabel.text = neta
         
     }
