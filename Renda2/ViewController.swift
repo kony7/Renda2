@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var sushiButton: UIButton!
     
     var number: Int = 0
+    var truck: Int = 0
     var audioPlayer: AVAudioPlayer!
     var audioPlayer2: AVAudioPlayer!
 
@@ -43,6 +44,13 @@ class ViewController: UIViewController {
             
             number = 0
             
+            if truck == 0{
+                truck = 1
+            }else if truck == 2{
+                truck = 0
+            }else{
+                truck = 2
+            }
         }
         
         switch number{
@@ -68,13 +76,28 @@ class ViewController: UIViewController {
             sushiChange(neta: "フライも美味しいよねたい", img: "tai", soundName: "taivoice")
         case 11:
             sushiChange(neta: "いい感じの脂中トロ", img: "tyutoro", soundName: "tyutorovoice")
+            
         case 12:
+            if truck == 0{
             let url = NSURL(string: "https://www.akindo-sushiro.co.jp/")
             if UIApplication.shared.canOpenURL(url! as URL){
-                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
+            }else if truck == 2{
+                let url = NSURL(string: "https://happinet-phantom.com/kimiao/")
+                if UIApplication.shared.canOpenURL(url! as URL){
+                    UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
+            }else{
+                audioPlayer.stop()
+                let url = NSURL(string: "https://youtu.be/OLVr1fqNZK4")
+                if UIApplication.shared.canOpenURL(url! as URL){
+                    UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+            }
             }
             
         default:
+            if truck == 2{
+                audioPlayer.play()
+            }
             sushiChange(neta: "あ、おいしいたまご", img: "tamago", soundName: "tamagovoice")
             
         }
