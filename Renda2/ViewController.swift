@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        sushiButton.setTitle("", for: .normal)
+        
         let soundURL = URL(fileURLWithPath:Bundle.main.path(forResource: "sushikuine", ofType: "mp3")!)
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
@@ -108,6 +110,7 @@ class ViewController: UIViewController {
         
         let image = UIImage(named: img)
         let state = UIControl.State.normal
+        sushiButton.setTitle("", for: .normal)
         sushiButton.setImage(image, for: state)
         
         let imgToAudio = URL(fileURLWithPath:Bundle.main.path(forResource: soundName, ofType: "m4a")!)
