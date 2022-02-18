@@ -58,6 +58,7 @@ class SushiSelectViewController: UIViewController {
         
         //ボタンを消す
         buriButton.isHidden = true
+        engawaButton.isHidden = true
         ebiButton.isHidden = true
         harasuButton.isHidden = true
         hotateButton.isHidden = true
@@ -83,7 +84,7 @@ class SushiSelectViewController: UIViewController {
                 bgmPlayer?.play()
                 
                 //音量を半減
-                bgmPlayer.volume = 0.5
+                bgmPlayer.volume = 0.2
                
             } catch {
                 print("error...")
@@ -164,6 +165,9 @@ class SushiSelectViewController: UIViewController {
     
     //ネタが流れる&次のやつが光る
     func netashuffle(neta:String,soundName:String){
+    
+        //もしBGMが止まってた時は再生する
+        bgmPlayer.play()
         
         //ボイスのURLを発行
         let voiceName = URL(fileURLWithPath:Bundle.main.path(forResource: soundName, ofType: "m4a")!)
@@ -185,6 +189,9 @@ class SushiSelectViewController: UIViewController {
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
             
+            number = Int.random(in: 0...12)
+            nextnetaSelect()
+            
         }else if number == 14{
             
             bgmPlayer.stop()
@@ -192,14 +199,27 @@ class SushiSelectViewController: UIViewController {
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
             
+            number = Int.random(in: 0...12)
+            nextnetaSelect()
+            
         }else if number == 15{
             
             let url = NSURL(string: "https://happinet-phantom.com/kimiao/")
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
             
+            number = Int.random(in: 0...12)
+            nextnetaSelect()
+            
         }else{
         
+            nextnetaSelect()
+
+        }
+        
+    }
+    
+    func nextnetaSelect(){
         //乱数によって次に光るボタンを決める
         switch number{
         case 1:
@@ -227,8 +247,6 @@ class SushiSelectViewController: UIViewController {
         default:
             tamagoButton.isHidden = false
         }
-        }
-        
     }
     
     
