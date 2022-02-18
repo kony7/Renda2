@@ -81,6 +81,9 @@ class SushiSelectViewController: UIViewController {
                 
                 // BGMを鳴らす
                 bgmPlayer?.play()
+                
+                //音量を半減
+                bgmPlayer.volume = 0.5
                
             } catch {
                 print("error...")
