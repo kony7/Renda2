@@ -9,46 +9,195 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sushi Select View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Renda2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SushiSelectViewController" customModule="Renda2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-Xt-XXb">
-                                <rect key="frame" x="111" y="363" width="193" height="171"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sushibg" translatesAutoresizingMaskIntoConstraints="NO" id="CQ1-e6-JTU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あ、おいしいたまご" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNP-Eb-uWh">
+                                <rect key="frame" x="20" y="352" width="374" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccc-Xt-XXb" userLabel="TamagoButton">
+                                <rect key="frame" x="28" y="132" width="125" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="tamago"/>
                                 <connections>
-                                    <action selector="addButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXv-AP-pXs"/>
+                                    <action selector="tamagoButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlv-L7-U8h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あ、おいしいたまご" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNP-Eb-uWh">
-                                <rect key="frame" x="105" y="253" width="205" height="119"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="MkA-Yr-GTZ" userLabel="BuriButton">
+                                <rect key="frame" x="251" y="786" width="118" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="buri"/>
+                                <connections>
+                                    <action selector="buriButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZ0-QP-hcy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="knj-2x-Yvp" userLabel="EbiButton">
+                                <rect key="frame" x="253" y="596" width="116" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ebi"/>
+                                <connections>
+                                    <action selector="ebiButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrk-pW-SgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="CTi-xf-ZSY" userLabel="EngawaButton">
+                                <rect key="frame" x="33" y="716" width="112" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="engawa"/>
+                                <connections>
+                                    <action selector="engawaButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="bke-3Y-0fr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HIq-Nf-L8q" userLabel="HarasuButton">
+                                <rect key="frame" x="30" y="31" width="120" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="harasu"/>
+                                <connections>
+                                    <action selector="harasuButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ind-sS-UPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jyq-ag-Ivg" userLabel="HotateButton">
+                                <rect key="frame" x="245" y="224" width="112" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hotate"/>
+                                <connections>
+                                    <action selector="hotateButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggW-hd-rYk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="b2t-jl-PBl" userLabel="IkaButton">
+                                <rect key="frame" x="31" y="508" width="116" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ika"/>
+                                <connections>
+                                    <action selector="ikaButtonTap" destination="BYZ-38-t0r" eventType="touchDragInside" id="MoX-r6-sKi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HUR-UX-kJq" userLabel="KatsuoButton">
+                                <rect key="frame" x="251" y="506" width="121" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.34999999999999998" height="1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="katsuo" title=""/>
+                                <connections>
+                                    <action selector="katsuoButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFf-Pe-kZe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="5RL-sb-izV" userLabel="MaguroButton">
+                                <rect key="frame" x="243" y="123" width="115" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="maguro"/>
+                                <connections>
+                                    <action selector="maguroButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIg-Of-QKA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ZpO-cM-oWH" userLabel="OtoroButton">
+                                <rect key="frame" x="251" y="697" width="120" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="otoro"/>
+                                <connections>
+                                    <action selector="otoroButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Nv-Wy-Qjn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="i2j-qz-d5e" userLabel="SamonButton">
+                                <rect key="frame" x="30" y="238" width="120" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="samon"/>
+                                <connections>
+                                    <action selector="samonButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="riW-h2-f4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="5Mk-9a-wu5" userLabel="TaiButton">
+                                <rect key="frame" x="243" y="20" width="115" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="tai"/>
+                                <connections>
+                                    <action selector="taiButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="hac-Bw-hxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wWT-uM-dPQ" userLabel="TyutoroButton">
+                                <rect key="frame" x="29" y="611" width="121" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="tyutoro" title=""/>
+                                <connections>
+                                    <action selector="tyutoroButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ti1-e0-SnJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2TI-PD-iTn" userLabel="KingsamonButton">
+                                <rect key="frame" x="33" y="821" width="112" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="kingsamon"/>
+                                <connections>
+                                    <action selector="kingsamonButtonTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaT-eS-6Cf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="numberLabel" destination="oNP-Eb-uWh" id="dEi-3C-MRf"/>
-                        <outlet property="sushiButton" destination="ccc-Xt-XXb" id="qht-l0-Ccq"/>
+                        <outlet property="buriButton" destination="MkA-Yr-GTZ" id="pHD-dN-qYS"/>
+                        <outlet property="ebiButton" destination="knj-2x-Yvp" id="8jk-F0-dPC"/>
+                        <outlet property="engawaButton" destination="CTi-xf-ZSY" id="EiI-Ye-Nec"/>
+                        <outlet property="harasuButton" destination="HIq-Nf-L8q" id="wLz-PH-VEs"/>
+                        <outlet property="hotateButton" destination="jyq-ag-Ivg" id="Idt-Tj-CBn"/>
+                        <outlet property="ikaButton" destination="b2t-jl-PBl" id="tdX-g0-Tp5"/>
+                        <outlet property="katsuoButton" destination="HUR-UX-kJq" id="T5R-Vw-KGv"/>
+                        <outlet property="kingsamonButton" destination="2TI-PD-iTn" id="fwn-ma-8oc"/>
+                        <outlet property="maguroButton" destination="5RL-sb-izV" id="zgH-43-cZd"/>
+                        <outlet property="netaLabel" destination="oNP-Eb-uWh" id="T6v-BJ-kn5"/>
+                        <outlet property="otoroButton" destination="ZpO-cM-oWH" id="119-Vv-mtR"/>
+                        <outlet property="samonButton" destination="i2j-qz-d5e" id="vl7-kl-VXM"/>
+                        <outlet property="taiButton" destination="5Mk-9a-wu5" id="07W-NO-Ewb"/>
+                        <outlet property="tamagoButton" destination="ccc-Xt-XXb" id="pmX-fU-X43"/>
+                        <outlet property="tyutoroButton" destination="wWT-uM-dPQ" id="JaA-O2-vbn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72" y="43"/>
+            <point key="canvasLocation" x="71.014492753623188" y="42.857142857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="buri" width="132" height="118"/>
+        <image name="ebi" width="132" height="118"/>
+        <image name="engawa" width="132" height="118"/>
+        <image name="harasu" width="132" height="118"/>
+        <image name="hotate" width="132" height="118"/>
+        <image name="ika" width="132" height="118"/>
+        <image name="katsuo" width="132" height="118"/>
+        <image name="kingsamon" width="132" height="118"/>
+        <image name="maguro" width="132" height="118"/>
+        <image name="otoro" width="132" height="118"/>
+        <image name="samon" width="132" height="118"/>
+        <image name="sushibg" width="1726" height="3734"/>
+        <image name="tai" width="132" height="118"/>
         <image name="tamago" width="132" height="118"/>
+        <image name="tyutoro" width="132" height="118"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -20,6 +20,7 @@
 		EE01C65227BAB08100FDA68C /* magurovoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64627BAB08100FDA68C /* magurovoice.m4a */; };
 		EE01C65327BAB08100FDA68C /* samonvoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64727BAB08100FDA68C /* samonvoice.m4a */; };
 		EE01C65527BAB36000FDA68C /* sushikuine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE01C65427BAB36000FDA68C /* sushikuine.mp3 */; };
+		EE50AC4E27BF712C00FB1538 /* SushiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50AC4D27BF712C00FB1538 /* SushiSelectViewController.swift */; };
 		EE5A15DE27B9FD5700371872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15DD27B9FD5700371872 /* AppDelegate.swift */; };
 		EE5A15E027B9FD5700371872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */; };
 		EE5A15E227B9FD5700371872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15E127B9FD5700371872 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		EE01C64627BAB08100FDA68C /* magurovoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = magurovoice.m4a; sourceTree = "<group>"; };
 		EE01C64727BAB08100FDA68C /* samonvoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = samonvoice.m4a; sourceTree = "<group>"; };
 		EE01C65427BAB36000FDA68C /* sushikuine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sushikuine.mp3; sourceTree = "<group>"; };
+		EE50AC4D27BF712C00FB1538 /* SushiSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiSelectViewController.swift; sourceTree = "<group>"; };
 		EE5A15DA27B9FD5700371872 /* Renda2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Renda2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5A15DD27B9FD5700371872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				EE5A15DD27B9FD5700371872 /* AppDelegate.swift */,
 				EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */,
 				EE5A15E127B9FD5700371872 /* ViewController.swift */,
+				EE50AC4D27BF712C00FB1538 /* SushiSelectViewController.swift */,
 				EE5A15F127BA1DAA00371872 /* sushi.swift */,
 				EE5A15E327B9FD5700371872 /* Main.storyboard */,
 				EE5A15E627B9FD5900371872 /* Assets.xcassets */,
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE5A15E227B9FD5700371872 /* ViewController.swift in Sources */,
+				EE50AC4E27BF712C00FB1538 /* SushiSelectViewController.swift in Sources */,
 				EE5A15DE27B9FD5700371872 /* AppDelegate.swift in Sources */,
 				EE5A15F227BA1DAA00371872 /* sushi.swift in Sources */,
 				EE5A15E027B9FD5700371872 /* SceneDelegate.swift in Sources */,
