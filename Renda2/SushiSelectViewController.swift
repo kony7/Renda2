@@ -176,7 +176,29 @@ class SushiSelectViewController: UIViewController {
         netaLabel.text = neta
         
         //乱数の生成
-        number = Int.random(in: 0...12)
+        number = Int.random(in: 0...15)
+        
+        //13だったらスシローのサイトを、14なら+81を、15なら君青のサイト見せてからボタン光らせる
+        if number == 13{
+            
+            let url = NSURL(string: "https://www.akindo-sushiro.co.jp/")
+            if UIApplication.shared.canOpenURL(url! as URL){
+                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
+            
+        }else if number == 14{
+            
+            bgmPlayer.stop()
+            let url = NSURL(string: "https://youtu.be/OLVr1fqNZK4")
+            if UIApplication.shared.canOpenURL(url! as URL){
+                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
+            
+        }else if number == 15{
+            
+            let url = NSURL(string: "https://happinet-phantom.com/kimiao/")
+            if UIApplication.shared.canOpenURL(url! as URL){
+                UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
+            
+        }else{
         
         //乱数によって次に光るボタンを決める
         switch number{
@@ -204,6 +226,7 @@ class SushiSelectViewController: UIViewController {
             tyutoroButton.isHidden = false
         default:
             tamagoButton.isHidden = false
+        }
         }
         
     }
