@@ -21,9 +21,10 @@
 		EE01C65327BAB08100FDA68C /* samonvoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE01C64727BAB08100FDA68C /* samonvoice.m4a */; };
 		EE01C65527BAB36000FDA68C /* sushikuine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE01C65427BAB36000FDA68C /* sushikuine.mp3 */; };
 		EE50AC4E27BF712C00FB1538 /* SushiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50AC4D27BF712C00FB1538 /* SushiSelectViewController.swift */; };
+		EE50ACD527C1DB4500FB1538 /* ikavoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE50ACD327C1DB4400FB1538 /* ikavoice.m4a */; };
+		EE50ACD627C1DB4500FB1538 /* engawavoice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EE50ACD427C1DB4500FB1538 /* engawavoice.m4a */; };
 		EE5A15DE27B9FD5700371872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15DD27B9FD5700371872 /* AppDelegate.swift */; };
 		EE5A15E027B9FD5700371872 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */; };
-		EE5A15E227B9FD5700371872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A15E127B9FD5700371872 /* ViewController.swift */; };
 		EE5A15E527B9FD5700371872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5A15E327B9FD5700371872 /* Main.storyboard */; };
 		EE5A15E727B9FD5900371872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5A15E627B9FD5900371872 /* Assets.xcassets */; };
 		EE5A15EA27B9FD5900371872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5A15E827B9FD5900371872 /* LaunchScreen.storyboard */; };
@@ -45,10 +46,11 @@
 		EE01C64727BAB08100FDA68C /* samonvoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = samonvoice.m4a; sourceTree = "<group>"; };
 		EE01C65427BAB36000FDA68C /* sushikuine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sushikuine.mp3; sourceTree = "<group>"; };
 		EE50AC4D27BF712C00FB1538 /* SushiSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiSelectViewController.swift; sourceTree = "<group>"; };
+		EE50ACD327C1DB4400FB1538 /* ikavoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ikavoice.m4a; sourceTree = "<group>"; };
+		EE50ACD427C1DB4500FB1538 /* engawavoice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = engawavoice.m4a; sourceTree = "<group>"; };
 		EE5A15DA27B9FD5700371872 /* Renda2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Renda2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5A15DD27B9FD5700371872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE5A15E127B9FD5700371872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE5A15E427B9FD5700371872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE5A15E627B9FD5900371872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE5A15E927B9FD5900371872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 			children = (
 				EE5A15DD27B9FD5700371872 /* AppDelegate.swift */,
 				EE5A15DF27B9FD5700371872 /* SceneDelegate.swift */,
-				EE5A15E127B9FD5700371872 /* ViewController.swift */,
 				EE50AC4D27BF712C00FB1538 /* SushiSelectViewController.swift */,
 				EE5A15F127BA1DAA00371872 /* sushi.swift */,
 				EE5A15E327B9FD5700371872 /* Main.storyboard */,
@@ -108,6 +109,8 @@
 				EE01C64127BAB08100FDA68C /* tamagovoice.m4a */,
 				EE01C64227BAB08100FDA68C /* tyutorovoice.m4a */,
 				EE01C65427BAB36000FDA68C /* sushikuine.mp3 */,
+				EE50ACD427C1DB4500FB1538 /* engawavoice.m4a */,
+				EE50ACD327C1DB4400FB1538 /* ikavoice.m4a */,
 			);
 			path = Renda2;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				EE01C64C27BAB08100FDA68C /* taivoice.m4a in Resources */,
 				EE01C64D27BAB08100FDA68C /* tamagovoice.m4a in Resources */,
+				EE50ACD627C1DB4500FB1538 /* engawavoice.m4a in Resources */,
 				EE01C64927BAB08100FDA68C /* burivoice.m4a in Resources */,
 				EE01C64B27BAB08100FDA68C /* katsuovoice.m4a in Resources */,
 				EE01C65527BAB36000FDA68C /* sushikuine.mp3 in Resources */,
@@ -186,6 +190,7 @@
 				EE01C65127BAB08100FDA68C /* hotatevoice.m4a in Resources */,
 				EE01C65227BAB08100FDA68C /* magurovoice.m4a in Resources */,
 				EE01C64F27BAB08100FDA68C /* otorovoice.m4a in Resources */,
+				EE50ACD527C1DB4500FB1538 /* ikavoice.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +201,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5A15E227B9FD5700371872 /* ViewController.swift in Sources */,
 				EE50AC4E27BF712C00FB1538 /* SushiSelectViewController.swift in Sources */,
 				EE5A15DE27B9FD5700371872 /* AppDelegate.swift in Sources */,
 				EE5A15F227BA1DAA00371872 /* sushi.swift in Sources */,

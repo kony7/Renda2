@@ -105,7 +105,7 @@ class SushiSelectViewController: UIViewController {
     
     @IBAction func engawaButtonTap(){
         engawaButton.isHidden = true
-        netashuffle(neta: "ぽかぽかじゃない方のえんがわ", soundName: "burivoice")
+        netashuffle(neta: "ぽかぽかじゃない方のえんがわ", soundName: "engawavoice")
     }
     
     @IBAction func harasuButtonTap(){
@@ -115,12 +115,12 @@ class SushiSelectViewController: UIViewController {
     
     @IBAction func hotateButtonTap(){
         hotateButton.isHidden = true
-        netashuffle(neta: "貝の王様ホタテ", soundName: "harasuvoice")
+        netashuffle(neta: "貝の王様ホタテ", soundName: "hotatevoice")
     }
     
     @IBAction func ikaButtonTap(){
         ikaButton.isHidden = true
-        netashuffle(neta: "イカのお寿司って聞き覚えすごい", soundName: "harasuvoice")
+        netashuffle(neta: "イカのお寿司って聞き覚えすごい", soundName: "ikavoice")
     }
     
     @IBAction func katsuoButtonTap(){
@@ -180,16 +180,16 @@ class SushiSelectViewController: UIViewController {
         netaLabel.text = neta
         
         //乱数の生成
-        number = Int.random(in: 0...15)
+        number = Int.random(in: 0...16)
         
         //13だったらスシローのサイトを、14なら+81を、15なら君青のサイト見せてからボタン光らせる
-        if number == 13{
+        if number == 16{
             
             let url = NSURL(string: "https://www.akindo-sushiro.co.jp/")
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
             
-            number = Int.random(in: 0...12)
+            number = Int.random(in: 0...13)
             nextnetaSelect()
             
         }else if number == 14{
@@ -199,7 +199,7 @@ class SushiSelectViewController: UIViewController {
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
             
-            number = Int.random(in: 0...12)
+            number = Int.random(in: 0...13)
             nextnetaSelect()
             
         }else if number == 15{
@@ -208,7 +208,7 @@ class SushiSelectViewController: UIViewController {
             if UIApplication.shared.canOpenURL(url! as URL){
                 UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)}
             
-            number = Int.random(in: 0...12)
+            number = Int.random(in: 0...13)
             nextnetaSelect()
             
         }else{
@@ -244,6 +244,10 @@ class SushiSelectViewController: UIViewController {
             taiButton.isHidden = false
         case 11:
             tyutoroButton.isHidden = false
+        case 12:
+            engawaButton.isHidden = false
+        case 13:
+            ikaButton.isHidden = false
         default:
             tamagoButton.isHidden = false
         }
